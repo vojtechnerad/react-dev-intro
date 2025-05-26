@@ -116,11 +116,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-}
-
-li:hover {
-  background-color: var(--bg-secondary);
 }
 
 li span {
@@ -139,11 +134,22 @@ li button {
   font-size: 0.9rem;
 }
 
-li button.link {
+li button.toggle {
   background-color: var(--success);
-  border: none;
+  color: white;
   margin-left: 0.5rem;
+}
+
+.link {
+  color: var(--text);
+  border: none;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  border-radius: var(--radius);
   cursor: pointer;
+}
+.link:hover {
+  color: var(--primary);
 }
 
 li button:hover {
